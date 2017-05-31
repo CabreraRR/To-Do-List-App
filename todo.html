@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
 	<link rel="stylesheet" href="public/CSS/todo.css" />
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="public/JS/todo.js"></script>
@@ -12,57 +12,35 @@
 
 	<div class="container-fluid">
 		<div class="navigation">
-			<h1>To do...</h1>
+			<h1><span style="color:#5A5666">Too doo...</span></h1>
 		</div>
-		<div class="flex-container">
-			<div class="flex-col">Monday
+		<div class="row">
+			<div class="col">
+				<h2>Monday</h2>
 				<div class="flex-box">
-					<div class="title">
-						<input type="checkbox" value="">stuff to do</input>
+					<input type="checkbox" class="check" value=""></input>
+					<div class="description">
+						stuff
 					</div>
-					<p class="description">description of stuff</p>
 				</div>
 			</div>
-			<div class="flex-col">Tuesday
-				<div class="flex-box">
-					<div class="title">
-						<input type="checkbox" value="">stuff to do</input>
-					</div>
-					<p class="description">description of stuff</p>
-				</div>
+			<div class="col">
+				<h2>Tuesday</h2>
 			</div>
-			<div class="flex-col">Wednesday
-				<div class="flex-box">
-					<div class="title">
-						<input type="checkbox" value="">stuff to do</input>
-					</div>
-					<p class="description">description of stuff</p>
-				</div>
+			<div class="col">
+				<h2>Wednesday</h2>
 			</div>
-			<div class="flex-col">Thursday
-				<div class="flex-box">
-					<div class="title">
-						<input type="checkbox" value="">stuff to do</input>
-					</div>
-					<p class="description">description of stuff</p>
-				</div>
+			<div class="col">
+				<h2>Thursday</h2>
 			</div>
-			<div class="flex-col">Friday
-				<div class="flex-box">
-					<div class="title">
-						<input type="checkbox" value="">stuff to do</input>
-					</div>
-					<p class="description">description of stuff</p>
-				</div>
+			<div class="col">
+				<h2>Friday</h2>
 			</div>
 		</div>
-	</div>
-	<div class="input-area">
-		<input placeholder="Title" id="title">
-		<textarea class="description-input" id="exampleTextarea" rows="3" id="description" placeholder="Description...."></textarea>
-		<button class="btn-primary btn-lg" style: "align-content:center">add</button>
-	</div>
-	</div>
+		<div class="input-area">
+			<textarea class="description-input" id="exampleTextarea" rows="3" id="description" placeholder="what to do..."></textarea>
+			<button class="btn-lg" style: "align-content:center">add</button>
+		</div>
 	</div>
 </body>
 

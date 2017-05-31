@@ -1,83 +1,79 @@
 body {
-	background: lightgrey;
+	background: #FFF9EE;
 }
 
 .navigation {
 	height 10vh;
 	width: 100vw;
+	padding-left: 20px;
+	padding-top: 20px;
 }
 
-.flex-container {
-	padding: 0;
-	margin: 0;
-	width: 100vw;
-	list-style: none;
-	background: lightsteelblue;
-	padding: 5px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-}
-
-.flex-col {
-	background: lightgrey;
+.col {
+	background: #5A5666;
+	border: #FFF9EE;
+	border-style: solid;
 	height: 75vh;
-	width: 17vw;
 	margin-top: 10px;
 	line-height: 50px;
-	color: white;
+	color: #FFF9EE;
 	font-weight: bold;
-	font-size: 2em;
 	text-align: center;
 }
 
 .flex-box {
 	display: flex;
 	flex: flow;
-	background: white;
+	background: #D5C7E3;
 	width: 15vw;
 	margin: 1vw;
 	align-content: flex-start;
+	align-items: center;
+	flexwrap: nowrap;
+	padding-left: 5px;
+	color: #3D474B;
 }
 
-.title {
-	color: black;
-	font-size: .6em;
+.flex-box:hover {
+	background: lightgrey;
+}
+
+.check {
+	margin-left: 5px;
 }
 
 .description {
-	color: grey;
-	font-size: .5em;
-}
-
-.menu {
-	display: flex;
-	background: lightgrey;
-	width: 100vw;
-	padding: 10px;
+	margin-left: 5px;
 }
 
 .description-input {
 	font-size: 14px;
-	padding-left: 10px;
-	color: dimgray;
-}
-
-.add {
-	margin-top: 10px;
-	padding: 10px;
-	background: lightgrey;
+	margin-left: 10px;
+	color: black;
 }
 
 input-area {
 	width: 100vw;
 	padding-left: 100px;
+	align-content: flex-start;
+	align-items: center;
 }
 
 .description-input {
 	width: 30vw;
 }
 
-.btn-primary {
-	background: lightsteelblue;
+.btn-lg {
+	background: #3D474B;
+	color: #FFF9EE;
+}
+
+.btn-lg:hover {
+	background: #675B70;
+	color: #FFF9EE;
+}
+
+.btn-lg:active {
+	background: #D5C7E3;
+	color: #3D474B;
 }
