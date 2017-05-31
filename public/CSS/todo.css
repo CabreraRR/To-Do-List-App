@@ -83,3 +83,9 @@ input-area {
 	background: #D5C7E3;
 	color: #3D474B;
 }
+
+.png-buttons {
+	max-width: 1.5em;
+	width: auto;
+	height: auto;
+}
