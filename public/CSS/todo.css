@@ -38,8 +38,9 @@ body {
 	background: lightgrey;
 }
 
-.check {
-	margin-left: 5px;
+.done {
+	background: grey;
+	color: darkgrey;
 }
 
 .description {
@@ -61,6 +62,10 @@ input-area {
 
 .description-input {
 	width: 30vw;
+}
+
+.form-control {
+	width: 10vw;
 }
 
 .btn-lg {

@@ -17,8 +17,7 @@
 		<div class="row">
 			<div class="col">
 				<h2>Monday</h2>
-				<div class="flex-box">
-					<input type="checkbox" class="check" value=""></input>
+				<div class="flex-box" id="check1">
 					<div class="description">
 						stuff
 					</div>
@@ -37,10 +36,18 @@
 				<h2>Friday</h2>
 			</div>
 		</div>
-		<div class="input-area">
-			<textarea class="description-input" id="exampleTextarea" rows="3" id="description" placeholder="what to do..."></textarea>
+		<div class="input-area row">
+			<textarea class="description-input" id="description" rows="3" id="description" placeholder="what to do..."></textarea>
+			<select class="weekday" id="day">
+  			<option>Monday</option>
+  			<option>Tuesday</option>
+  			<option>Wednesday</option>
+  			<option>Thursday</option>
+  			<option>Friday</option>
+  		</select>
 			<button class="btn-lg" style: "align-content:center">add</button>
 		</div>
+
 	</div>
 </body>
 
