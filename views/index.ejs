@@ -13,26 +13,17 @@
     </div>
   <div class="row">
   <div class="col">
-    <h2>Monday</h2>
+    <h2>Things to do</h2>
+    <% for(i=0; i<1;i++) { %>
       <div class="flex-box">
         <input type="checkbox" class="check" value=""></input>
         <div class="description">
-          <%= data[1].title %>
+          <%= data[i].title %>
         </div>
       </div>
+      <% } %>
     </div>
-    <div class="col">
-      <h2>Tuesday</h2>
-    </div>
-    <div class="col">
-      <h2>Wednesday</h2>
-    </div>
-    <div class="col">
-      <h2>Thursday</h2>
-    </div>
-    <div class="col">
-        <h2>Friday</h2>
-    </div>
+
   </div>
   <div class="input-area">
     <textarea class="description-input" id="exampleTextarea" rows="3" id="description" placeholder="what to do..."></textarea>
