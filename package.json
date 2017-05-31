@@ -1,0 +1,24 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "description": "A to do list app that meets the specifications of the Learners Guild to-do-list goal",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CabreraRR/To-Do-List-App.git"
+  },
+  "author": "Emma Brown & Roel Cabrera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CabreraRR/To-Do-List-App/issues"
+  },
+  "homepage": "https://github.com/CabreraRR/To-Do-List-App#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pg-promise": "^5.8.1"
+  }
+}
