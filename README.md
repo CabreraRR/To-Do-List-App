@@ -9,18 +9,18 @@
 - [ ] Code uses a linter and there are no linting errors.
 - [ ] Repository includes a README file with basic installation and setup.
 - [ ] All dependencies are properly declared in `package.json`.
-- [ ] All major features are added via pull requests with a clear description and concise commit messages.
-- [ ] Every pull request has been reviewed by at least one other person.
+- [x] All major features are added via pull requests with a clear description and concise commit messages.
+- [x] Every pull request has been reviewed by at least one other person.
 - [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 #### Functionality
 - [ ] Users can create to do list items.
 - [ ] Users can delete unwanted to do list items.
-- [ ] Users can check items off as completed.
+- [x] Users can check items off as completed.
 - [ ] Users can edit the text on existing to do list items.
 - [ ] UI renders to do items differently when they are completed (using a checkbox or some other indicator).
 - [ ] When an error occurs, the user is notified with modal message.\*
-- [ ] Backend uses Node.js and [Express][npm-express].
+- [x] Backend uses Node.js and [Express][npm-express].
 - [ ] App persists to do list items in a database.
 
 #### Testing

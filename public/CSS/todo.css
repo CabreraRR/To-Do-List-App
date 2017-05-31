@@ -19,6 +19,7 @@ body {
 	color: #FFF9EE;
 	font-weight: bold;
 	text-align: center;
+	flex-direction: column;
 }
 
 .flex-box {
