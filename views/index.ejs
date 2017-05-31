@@ -14,15 +14,17 @@
   <div class="row">
   <div class="col">
     <h2>Things to do</h2>
-    <% for(i=0; i<1;i++) { %>
+    <% for (i = 0; i < data.length; i++){ %>
       <div class="flex-box">
-        <input type="checkbox" class="check" value=""></input>
-        <div class="description">
-          <%= data[i].title %>
+        <div id = '<%= data[i].id%>'>
+          <h2><%= data[i].title %></h2>
+          <p><%= data[i].description %></p>
+          <img src='pencil.png' class='png-buttons' />
+          <img src='trash_can.png' class='png-buttons' />
         </div>
       </div>
-      <% } %>
-    </div>
+    <% } %>
+  </div>
 
   </div>
   <div class="input-area">

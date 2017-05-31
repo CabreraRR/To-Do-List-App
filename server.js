@@ -12,7 +12,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', function(req, res){
   actions.getAll()
     .then(function(tasks){
-      console.log('tasks:', tasks)
       res.render('index.ejs', {data: tasks})
     })
 })
