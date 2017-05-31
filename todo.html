@@ -2,9 +2,9 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.css" />
 	<link rel="stylesheet" href="public/CSS/todo.css" />
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="public/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="public/JS/todo.js"></script>
 </head>
 
@@ -17,34 +17,50 @@
 		<div class="row">
 			<div class="col">
 				<h2>Monday</h2>
-				<div class="flex-box" id="check1">
-					<div class="description">
-						stuff
+				<div id="Monday">
+					<div class="flex-box">
+						<div class="description">
+							stuff
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col">
 				<h2>Tuesday</h2>
+				<div id="Tuesday">
+
+				</div>
 			</div>
 			<div class="col">
 				<h2>Wednesday</h2>
+				<div id="Wednesday">
+
+				</div>
 			</div>
 			<div class="col">
 				<h2>Thursday</h2>
+				<div id="Thursday">
+
+				</div>
 			</div>
 			<div class="col">
 				<h2>Friday</h2>
+				<div id="Friday">
+
+				</div>
 			</div>
 		</div>
 		<div class="input-area row">
-			<textarea class="description-input" id="description" rows="3" id="description" placeholder="what to do..."></textarea>
-			<select class="weekday" id="day">
-  			<option>Monday</option>
-  			<option>Tuesday</option>
-  			<option>Wednesday</option>
-  			<option>Thursday</option>
-  			<option>Friday</option>
-  		</select>
+			<form action="/add" method="post">
+				<textarea class="description-input" id="description" rows="3" id="description" placeholder="what to do..."></textarea>
+				<select class="weekday" id="day">
+  				<option id="monday">Monday</option>
+  				<option id="tuesday">Tuesday</option>
+  				<option id="wednesday" >Wednesday</option>
+  				<option id="thursday">Thursday</option>
+  				<option id="friday">Friday</option>
+  			</select>
+			</form>
 			<button class="btn-lg" style: "align-content:center">add</button>
 		</div>
 
