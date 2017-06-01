@@ -1,5 +1,5 @@
 body {
-	background: #FFF9EE;
+	background-image: #FFF9EE;
 }
 
 .navigation {
@@ -10,37 +10,42 @@ body {
 }
 
 .col {
-	background: #5A5666;
-	border: #FFF9EE;
-	border-style: solid;
+	display: flex;
+	background-image: url(/cork%20background.jpg);
 	height: 75vh;
+	width: 100vw;
 	margin-top: 10px;
 	line-height: 50px;
-	color: #FFF9EE;
-	font-weight: bold;
-	text-align: center;
+	color: #3D474B;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .flex-box {
 	display: flex;
 	flex: flow;
-	background: #D5C7E3;
+	background: #FFFFA5;
 	width: 15vw;
 	margin: 1vw;
+	padding: 5px;
 	align-content: flex-start;
 	align-items: center;
-	flexwrap: nowrap;
-	padding-left: 5px;
+	flexwrap: wrap;
 	color: #3D474B;
 }
 
-.flex-box:hover {
-	background: lightgrey;
+.png-buttons {
+	max-width: 1.5em;
+	width: auto;
+	height: auto;
+}
+
+.menu {
+	align-content: flex-end;
 }
 
 .done {
-	background: grey;
+	background: lightgrey;
 	color: darkgrey;
 }
 
@@ -82,10 +87,4 @@ body {
 .btn-lg:active {
 	background: #D5C7E3;
 	color: #3D474B;
-}
-
-.png-buttons {
-	max-width: 1.5em;
-	width: auto;
-	height: auto;
 }
