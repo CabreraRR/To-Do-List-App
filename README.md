@@ -3,6 +3,13 @@
 - **Github handle:** maighdlyn, CabreraRR
 - **Team name:** tacky-viper
 
+## Installation
+
+- Clone github repository
+- Run ```npm install```
+- Run ```npm start```
+- Navigate to ```http://localhost:3000```
+
 ## Specifications
 
 #### General

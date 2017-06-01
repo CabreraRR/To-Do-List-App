@@ -1,4 +1,3 @@
-
 // on double click of task
 $(function () {
 	$('.flex-box').dblclick(function () {
@@ -17,18 +16,17 @@ $(function () {
 });
 
 //clicking the add button
-$(function () {
-	$('.btn-lg').on('click', function () {
-		if ($('.description-input').val().length == 0) {
-			console.log("nothing in text-area bruh...")
-		} else {
-			console.log($('.description-input').val());
-			console.log($('#day option:selected').text());
-			//push information to table
-			//update columns
-			$('tuesday').append('<div class="flex-box"><div class="description">stuff</div></div>');
-			$('.description-input').val('');
-			console.log("ready for next too-doo");
-		};
-	});
+
+$('.btn-lg').on('click', function () {
+	if ($('.description-input').val().length == 0) {
+		console.log("nothing in text-area bruh...")
+	} else {
+		console.log($('.description-input').val());
+		console.log($('#day option:selected').text());
+		//push information to table
+		//update columns
+		$('tuesday').append('<div class="flex-box"><div class="description">stuff</div></div>');
+		$('.description-input').val('');
+		console.log("ready for next too-doo");
+	};
 });

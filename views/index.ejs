@@ -1,35 +1,40 @@
 <head>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="CSS/todo.css" />
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="JS/todo.js"></script>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="CSS/todo.css" />
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="JS/todo.js"></script>
 </head>
 
-  <body>
+<body>
 
-  <div class="container-fluid">
-    <div class="navigation">
-      <h1><span style="color:#5A5666">Too doo...</span></h1>
-    </div>
-  <div class="row">
-  <div class="col">
-    <h2>Things to do</h2>
-    <% for (i = 0; i < data.length; i++){ %>
-      <div class="flex-box">
-        <div id = '<%= data[i].id%>'>
-          <h2><%= data[i].title %></h2>
-          <p><%= data[i].description %></p>
-          <img src='pencil.png' class='png-buttons' />
-          <img src='trash_can.png' class='png-buttons' />
-        </div>
-      </div>
-    <% } %>
-  </div>
+	<div class="container-fluid">
+		<div class="navigation">
+			<h1><span style="color:#5A5666">Too doo...</span></h1>
+		</div>
+		<div class="row">
+			<div class="col">
+				<% for (i = 0; i < data.length; i++){ %>
+					<div class="flex-box">
+						<div id='<%= data[i].id%>'>
+							<h3>
+								<%= data[i].title %>
+							</h3>
+							<p>
+								<%= data[i].description %>
+							</p>
+							<div class="menu">
+								<img src='pencil.png' class='png-buttons' />
+								<img src='trash_can.png' class='png-buttons' />
+							</div>
+						</div>
+					</div>
+					<% } %>
+			</div>
 
-  </div>
-  <div class="input-area">
-    <textarea class="description-input" id="exampleTextarea" rows="3" id="description" placeholder="what to do..."></textarea>
-    <button class="btn-lg" style: "align-content:center">add</button>
-  </div>
-</div>
+		</div>
+		<div class="input-area">
+			<textarea class="description-input" id="exampleTextarea" rows="3" id="description" placeholder="what to do..."></textarea>
+			<button class="btn-lg" style: "align-content:center">add</button>
+		</div>
+	</div>
 </body>
