@@ -2,11 +2,13 @@
 const queries = require('./queries.js')
 const pgPromise = require('pg-promise')
 const pgp = pgPromise()
-const db = pgp({database: 'to_do_list'})
+const db = pgp({
+	database: 'to_do_list'
+})
 
 const actions = {
-  getAll: () => db.any(queries.selectAll)
-  // create: (title, description, completed) => db.oneOrNone(queries.insert, [title, description, completed]),
+	getAll: () => db.any(queries.selectAll),
+	create: (title) => db.none(queries.insert, [title]),
 }
 
 module.exports = actions
