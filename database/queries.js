@@ -1,7 +1,10 @@
 const queries = {
-  selectAll: 'SELECT * FROM to_do',
-  // insert: insert: INSERT INTO to_do (title, description, completed) VALUES ($1, $2, $3)
+	selectAll: 'SELECT * FROM to_do',
+
+	insert: 'INSERT INTO to_do (title) VALUES ($1)'
 }
+
+
 //
 // const addTask = {
 //   insert: INSERT INTO to_do (title, description, completed) VALUES (/* put js here */)

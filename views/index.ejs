@@ -19,12 +19,13 @@
 							<h3>
 								<%= data[i].title %>
 							</h3>
-							<p>
-								<%= data[i].description %>
-							</p>
+<!--
+<p>
+	<%= data[i].description %>
+</p>
+-->
 							<div class="menu">
-								<img src='pencil.png' class='png-buttons' />
-								<img src='trash_can.png' class='png-buttons' />
+								<img src='pencil.png' class='png-buttons' /> <img src='trash_can.png' class='png-buttons' />
 							</div>
 						</div>
 					</div>
@@ -32,9 +33,10 @@
 			</div>
 
 		</div>
-		<div class="input-area">
-			<textarea class="description-input" id="exampleTextarea" rows="3" id="description" placeholder="what to do..."></textarea>
-			<button class="btn-lg" style: "align-content:center">add</button>
-		</div>
+
+		<form class="input-area" action="/add" method="post">
+			<input class="description-input" id="exampleTextarea" id="description" placeholder="what to do..." type="text" name="task" />
+			<input class="btn-lg" style="align-content:center" type="submit" value="submit" />
+		</form>
 	</div>
 </body>
