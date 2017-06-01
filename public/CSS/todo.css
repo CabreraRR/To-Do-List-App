@@ -54,7 +54,7 @@ body {
 	color: black;
 }
 
-input-area {
+.input-area {
 	width: 100vw;
 	padding-left: 100px;
 	align-content: flex-start;

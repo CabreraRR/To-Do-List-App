@@ -1,7 +1,3 @@
-$(document).ready(function () {
-	console.log("ready!");
-});
-
 
 // on double click of task
 $(function () {
