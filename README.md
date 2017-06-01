@@ -1,5 +1,5 @@
 # To-Do-List-App
-- **Name:** Emma Brown, Roel Cabrera
+- **Name:** Emma Brown & Roel Cabrera
 - **Github handle:** maighdlyn, CabreraRR
 - **Team name:** tacky-viper
 
@@ -40,4 +40,3 @@ There are thorough tests for all functionality involved in interacting with the 
 - [ ] Users can create multiple to-do lists.
 - [ ] Users have their own account and can sign up and log in/out.
 - [ ] App is written with ES6 and compiled using [babel][npm-babel].
-
