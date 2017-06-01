@@ -7,6 +7,8 @@
 
 - Clone github repository
 - Run ```npm install```
+- Run ``` npm install body-parser```
+- Run ```psql < database/todo.sql```
 - Run ```npm start```
 - Navigate to ```http://localhost:3000```
 
