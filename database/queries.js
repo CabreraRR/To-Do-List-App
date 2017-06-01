@@ -1,5 +1,6 @@
 const queries = {
-  selectAll: 'SELECT * FROM to_do'
+  selectAll: 'SELECT * FROM to_do',
+  // insert: insert: INSERT INTO to_do (title, description, completed) VALUES ($1, $2, $3)
 }
 //
 // const addTask = {
