@@ -1,25 +1,21 @@
 const queries = {
 	selectAll: 'SELECT * FROM to_do',
-
-	insert: 'INSERT INTO to_do (title) VALUES ($1)'
+	insert: 'INSERT INTO to_do (title) VALUES ($1)',
+	delete: 'DELETE FROM to_do WHERE id = $1'
 }
 
 
 //
 // const addTask = {
-//   insert: INSERT INTO to_do (title, description, completed) VALUES (/* put js here */)
-// }
-//
-// const removeTask = {
-//   remove: DELETE FROM to_do WHERE id = /* js stuff */;
+//   insert: INSERT INTO to_do (title, description, completed) VALUES (/* put stuff here */)
 // }
 //
 // const updateTitle = {
-//   updateTitle: UPDATE to_do SET title = /* 'js stuff' */ WHERE id = /* js stuff */;
+//   updateTitle: UPDATE to_do SET title = /* 'stuff' */ WHERE id = /* js stuff */;
 // }
 //
 // const updateCompleted = {
-//   updateCompleted: UPDATE to_do SET completed = /* js stuff */ WHERE id = /* js stuff */;
+//   updateCompleted: UPDATE to_do SET completed = /* stuff */ WHERE id = /* stuff */;
 // }
 
 

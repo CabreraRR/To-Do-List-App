@@ -25,7 +25,12 @@
 </p>
 -->
 							<div class="menu">
-								<img src='pencil.png' class='png-buttons' /> <img src='trash_can.png' class='png-buttons' />
+								<img src="pencil.png" class="png-buttons" />
+                <form method="post" action="/delete/<%= data[i].id%>">
+                  <button type="submit">
+                    <img src="trash_can.png" class="png-buttons" />
+                  </button>
+                </form>
 							</div>
 						</div>
 					</div>
