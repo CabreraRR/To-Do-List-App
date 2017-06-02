@@ -15,7 +15,7 @@
 ## Specifications
 
 #### General
-- [ ] Code uses a linter and there are no linting errors.
+- [x] Code uses a linter and there are no linting errors.
 - [x] Repository includes a README file with basic installation and setup.
 - [x] All dependencies are properly declared in `package.json`.
 - [x] All major features are added via pull requests with a clear description and concise commit messages.
