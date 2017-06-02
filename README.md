@@ -15,7 +15,7 @@
 ## Specifications
 
 #### General
-- [ ] Code uses a linter and there are no linting errors.
+- [x] Code uses a linter and there are no linting errors.
 - [x] Repository includes a README file with basic installation and setup.
 - [x] All dependencies are properly declared in `package.json`.
 - [x] All major features are added via pull requests with a clear description and concise commit messages.
@@ -26,11 +26,11 @@
 - [x] Users can create to do list items.
 - [x] Users can delete unwanted to do list items.
 - [x] Users can check items off as completed.
-- [ ] Users can edit the text on existing to do list items.
-- [ ] UI renders to do items differently when they are completed (using a checkbox or some other indicator).
-- [ ] When an error occurs, the user is notified with modal message.\*
+- [x] Users can edit the text on existing to do list items.
+- [x] UI renders to do items differently when they are completed (using a checkbox or some other indicator).
+- [x] When an error occurs, the user is notified with modal message.\*
 - [x] Backend uses Node.js and [Express][npm-express].
-- [ ] App persists to do list items in a database.
+- [x] App persists to do list items in a database.
 
 #### Testing
 There are thorough tests for all functionality involved in interacting with the database.
