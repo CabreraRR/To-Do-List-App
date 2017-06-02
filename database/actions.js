@@ -10,15 +10,15 @@ const actions = {
 	getAll: () => db.any(queries.selectAll),
 	create: (title) => {
 		db.any(queries.insert, [title])
-		return 'new sticky created'
+		// return 'new sticky created'
 	},
 	delete: (id) => {
 		db.none(queries.delete, [id])
-		return 'sticky has been deleted'
+		// return 'sticky has been deleted'
 	},
 	update: (title, id) => {
 		db.one(queries.update, [title, id])
-		return 'sticky has been updated'
+		// return 'sticky has been updated'
 	}
 }
 
