@@ -13,7 +13,6 @@ app.use(bodyParser.urlencoded({
 	extended: false
 }))
 app.get('/', function (req, res) {
-	console.log("string")
 	actions.getAll()
 		.then(function (tasks) {
 			res.render('index.ejs', {

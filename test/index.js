@@ -1,17 +1,16 @@
 const expect = require('chai').expect
 const database = require('../database/actions');
+console.log(database)
 
-
-describe('Select Query', (done) => {
+describe('Action Query', (done) => {
   // beforeEach(() => {
   //   database.truncate()
   // })
-  //
+
   // before((done) => {
   //   this.todo = {
-  //     title: 'more stuff',
-  //     description: 'describe describe',
-  //     due_date: '2017-06-02T07:00:00.000Z',
+  //     title: 'run dishwasher',
+  //     description: 'people need clean dishes',
   //     completed: true
   //   }
   //
@@ -21,24 +20,49 @@ describe('Select Query', (done) => {
   //     })
   // })
 
-  it('should give us all the todos',  (done) => {
+  it ("it exists", () =>{
+    expect(database.create('stuff')).to.exist
+  })
+  it ("Creates to do list item", () =>{
+    expect(database.create('hello')).to.equal('new sticky created')
+  })
+  it ("Deletes to do list item", () =>{
+    var test_data = {
+       id: 2,
+       title: 'more stuff',
+       description: 'describe describe',
+       completed: true
+     }
+    expect(database.delete(test_data.id)).to.equal('sticky has been deleted')
+  })
+
+  it ("Updates to do list item", () =>{
+    var test_data = {
+       id: 2,
+       title: 'more stuff',
+       description: 'describe describe',
+       completed: true
+     }
+    expect(database.update("new list item", test_data.id)).to.equal('sticky has been updated')
+  })
+
+
+  // it('should give us all the todos',  (done) => {
   //   [{
   //    id: 2,
   //    title: 'more stuff',
   //    description: 'describe describe',
-  //    due_date: 2017-06-02T07:00:00.000Z,
   //    completed: true },
-    // {
+  //   {
   //   id: 1,
-  //   title: 'input goes here',
+  //   title: 'run dishwasher',
   //   description: 'descriptioney stuff',
-  //   due_date: 2017-06-01T07:00:00.000Z,
   //   completed: false }]
-
-    database.getAll()
-      .then(results => {
-        expect(results[0].title).to.eql('more stuff')
-        done()
-      })
-  })
+  //
+  //   // database.getAll()
+  //     .then(results => {
+  //       expect(results[0].title).to.eql('more stuff')
+  //       done()
+  //     // })
+  // })
 })

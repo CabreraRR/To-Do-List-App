@@ -5,19 +5,4 @@ const queries = {
 	update: 'UPDATE to_do SET title = $1 WHERE id = $2 RETURNING *'
 }
 
-
-//
-// const addTask = {
-//   insert: INSERT INTO to_do (title, description, completed) VALUES (/* put stuff here */)
-// }
-//
-// const updateTitle = {
-//   updateTitle: UPDATE to_do SET title = /* 'stuff' */ WHERE id = /* js stuff */;
-// }
-//
-// const updateCompleted = {
-//   updateCompleted: UPDATE to_do SET completed = /* stuff */ WHERE id = /* stuff */;
-// }
-
-
 module.exports = queries;
