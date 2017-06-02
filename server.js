@@ -21,13 +21,20 @@ app.get('/', function (req, res) {
 		})
 })
 
-
-
 app.post('/add', function (req, res) {
 	actions.create(req.body.task)
 		.then(function (data) {
 			res.redirect('/')
 		})
+})
+
+app.post('/delete/:id', function (req, res) {
+  actions.delete(req.params.id)
+  // console.trace('app.delete')
+  .then(function (){
+			res.redirect('/')
+      console.log('redirected')
+      })
 })
 
 app.listen(3000)
