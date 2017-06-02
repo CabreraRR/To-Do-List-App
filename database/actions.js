@@ -8,9 +8,18 @@ const db = pgp({
 
 const actions = {
 	getAll: () => db.any(queries.selectAll),
-	create: (title) => db.none(queries.insert, [title]),
-	delete: (id) => db.none(queries.delete, [id]),
-	update: (title, id) => db.one(queries.update, [title, id])
+	create: (title) => {
+		db.any(queries.insert, [title])
+		// return 'new sticky created'
+	},
+	delete: (id) => {
+		db.none(queries.delete, [id])
+		// return 'sticky has been deleted'
+	},
+	update: (title, id) => {
+		db.one(queries.update, [title, id])
+		// return 'sticky has been updated'
+	}
 }
 
 module.exports = actions

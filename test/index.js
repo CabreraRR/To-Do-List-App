@@ -1,6 +1,7 @@
 const expect = require('chai').expect
 const database = require('../database/actions');
 console.log(database)
+
 describe('Action Query', (done) => {
 	it("it exists", () => {
 		expect(database.create('stuff')).to.exist
@@ -26,4 +27,6 @@ describe('Action Query', (done) => {
 		}
 		expect(database.update("new list item", test_data.id)).to.equal('sticky has been updated')
 	})
+
+
 })
