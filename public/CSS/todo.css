@@ -33,6 +33,13 @@ body {
 	align-items: center;
 	flexwrap: wrap;
 	color: #3D474B;
+	transition: 0.25s linear;
+	transform: rotate(7deg);
+}
+
+.flex-box:hover {
+	transition: 0.25s linear;
+	transform: rotate(0);
 }
 
 .png-buttons {
@@ -47,7 +54,10 @@ body {
 
 .done {
 	background: lightgrey;
-	color: darkgrey;
+	color: black;
+	opacity: .75;
+	transition: 0.25s linear;
+	transform: rotate(-7deg);
 }
 
 .description-input {

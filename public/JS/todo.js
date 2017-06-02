@@ -13,12 +13,15 @@ $(function () {
 	});
 });
 
-//clicking the add button
-$('.btn-lg').on('click', function () {
-	if ($('.description-input').val().length == 0) {
-		console.log("nothing in text-area bruh...")
-	} else {
-		$('.description-input').val('');
-		console.log("ready for next too-doo");
-	};
+$(function () {
+	$('button.update').on('click', function () {
+		var editTitle = prompt("Update task");
+		if (editTitle != null) {
+			$.post("/update", {
+				id: $(".update").attr("data-id")
+			}, function (todo) {
+				$("h3." + todo.id).replaceWith("<h3>" + todo.title + "</h3>");
+			});
+		}
+	});
 });

@@ -9,7 +9,8 @@ const db = pgp({
 const actions = {
 	getAll: () => db.any(queries.selectAll),
 	create: (title) => db.none(queries.insert, [title]),
-	delete: (id) => db.none(queries.delete, [id])
+	delete: (id) => db.none(queries.delete, [id]),
+	update: (title, id) => db.one(queries.update, [title, id])
 }
 
 module.exports = actions
